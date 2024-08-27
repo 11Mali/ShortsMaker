@@ -1,9 +1,26 @@
 # Shorts maker for creators
 
-This is a present to my brother.
+**This is a present to my brother.**
 
 He enjoys coding and sharing his work on Twitch.tv. The issue lies in him not being the best editor or having the time to edit.
 
+---
+
+# Usage
+
+How to use in version 1. Pointing out the elephant in the room first. The elephant being dimension of videos. Short/clips are usually in the format 9:16 (portrait), and longform are generally 16:9 (landscape).
+
+- The method is too export two video, one in landscape and one portrait. Thereafter post the landscape like usual with description and chapters.
+
+- Thereafter input the video link in the app, where the description has chapter stamps.
+
+- Select shorts/clips path and portrait video paths. 
+
+- Process the video and save shorts/clips.
+
+PS: In case of lost footage or longer streams which have not been saved. it is possible to download with video link
+
+---
 
 ### Aim 
 
@@ -29,22 +46,9 @@ Using an Openai model and defining a prompt may be a resonable solution.
 - Output Video Length Limit - The current web apps have a maximum output video length of 3 minutes.
 - Cost - Subscribtion service with tiered system.
 
-# Usage
+---
 
-How to use in version 1. Pointing out the elephant in the room first. The elephant being dimension of videos. Short/clips are usually in the format 9:16 (portrait), and longform are generally 16:9 (landscape).
-
-- The method is too export two video, one in landscape and one portrait. Thereafter post the landscape like usual with description and chapters.
-
-- Thereafter input the video link in the app, where the description has chapter stamps.
-
-- Select shorts/clips path and portrait video paths. 
-
-- Process the video and save shorts/clips.
-
-PS: In case of lost footage or longer streams which have not been saved. it is possible to download with video link
-
-
-## Journal 
+### Journal 
 
 The long proccessing time when downloading video occurs when downloading from youtube using a link.
 
@@ -62,8 +66,9 @@ In this version i added random noise to vary the length of the outcome clips. Th
 I identified why the existing web applications that provide the same service take soo long. They are downloading the video as it is not able to manipulate the video without a temporary clone.
 Therefore they recommend using shorter video (+-15).
 
+---
 
-## Future
+### Future
 
 Future improvements will include:
 - The possibility to download from different video sharing plattforms
@@ -74,4 +79,4 @@ Future improvements will include:
 
 Further usertesting will be needed prior to starting on iteration 2.
 
-Here you go lil bro!!!
+**Here you go lil bro!!!**
