@@ -15,13 +15,13 @@ def chapther_grabber(video_link):
     start_time = time.time()
 
     yt = YouTube(video_link)
-    print("video found")
+    print("Video found")
 
-    #Saved the description in a string variable. want to remove the chapterstamps out into its own list
+    #saved the description in a string variable. want to remove the chapterstamps out into its own list
     url = requests.get(video_link).text
     search = re.search(r'shortDescription":"', url)
     description = ""
-    print("description found")
+    print("Description found")
 
     count = search.start() + 19  # adding the length of the 'shortDescription":"
     while True:
@@ -38,9 +38,9 @@ def chapther_grabber(video_link):
             description += letter
             count += 1
 
-    print(f'description: {description}')
+    print(f'Description: {description}')
 
-    #Length of video - converted to timestamp format
+    #length of video - converted to timestamp format
     video_len = yt.length
 
     seconds = video_len % (24 * 3600)
@@ -50,7 +50,7 @@ def chapther_grabber(video_link):
 
     video_len = ("%02d:%02d" % (minutes, seconds)) # Format --> MM:SS
 
-    print(f"length of video {video_len} min")
+    print(f"Length of video {video_len} min")
 
     #extract timestamps
     timestamps = re.findall(r"\d+:\d+",description)
@@ -62,9 +62,3 @@ def chapther_grabber(video_link):
     print(f"The time of execution of above program is : {round((end_time-start_time),2)} s")
     
     return timestamps , video_len
-
-
-#the only global variable is the link
-ytv_url = "https://www.youtube.com/watch?v=phOkyQo7rjo"
-
-timestamps, video_len = chapther_grabber(ytv_url)
